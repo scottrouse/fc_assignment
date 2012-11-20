@@ -22,9 +22,9 @@ function fc_assignment_node_info() {
     'assignment' => array(
       'name' => t('Assignment'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('An <em>Assignment</em> is a specific incident to which various staff may be assigned.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Assignment Name'),
       'help' => '',
     ),
   );
