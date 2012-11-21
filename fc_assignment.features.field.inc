@@ -249,11 +249,11 @@ function fc_assignment_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_assignment_staff',
       'foreign keys' => array(
-        'node' => array(
+        'users' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'target_id' => 'uid',
           ),
-          'table' => 'node',
+          'table' => 'users',
         ),
       ),
       'indexes' => array(
@@ -387,6 +387,20 @@ function fc_assignment_field_default_fields() {
         'active' => 1,
         'module' => 'image',
         'settings' => array(
+          'filefield_sources' => array(
+            'filefield_sources' => array(),
+            'source_attach' => array(
+              'absolute' => 0,
+              'attach_mode' => 'move',
+              'path' => 'file_attach',
+            ),
+            'source_imce' => array(
+              'imce_mode' => 0,
+            ),
+            'source_reference' => array(
+              'autocomplete' => '0',
+            ),
+          ),
           'preview_image_style' => 'large',
           'progress_indicator' => 'bar',
         ),
