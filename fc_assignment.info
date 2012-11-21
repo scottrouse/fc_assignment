@@ -3,6 +3,7 @@ description = Defines the "Assignment" content type.
 core = 7.x
 package = Fire Center
 version = 7.x-1.0-alpha2
+php = 5.2.4
 project = fc_assignment
 dependencies[] = ctools
 dependencies[] = date
