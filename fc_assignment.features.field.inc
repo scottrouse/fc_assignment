@@ -249,11 +249,11 @@ function fc_assignment_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_assignment_staff',
       'foreign keys' => array(
-        'node' => array(
+        'users' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'target_id' => 'uid',
           ),
-          'table' => 'node',
+          'table' => 'users',
         ),
       ),
       'indexes' => array(
