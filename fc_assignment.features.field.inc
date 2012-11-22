@@ -264,18 +264,17 @@ function fc_assignment_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'views',
+        'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'view' => array(
-            'args' => array(),
-            'display_name' => 'entityreference_3',
-            'view_name' => 'user_reference',
+          'sort' => array(
+            'type' => 'none',
           ),
+          'target_bundles' => array(),
         ),
         'profile2_private' => FALSE,
         'target_type' => 'user',
