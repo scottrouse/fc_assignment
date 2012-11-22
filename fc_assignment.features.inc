@@ -15,6 +15,13 @@ function fc_assignment_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function fc_assignment_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function fc_assignment_node_info() {
